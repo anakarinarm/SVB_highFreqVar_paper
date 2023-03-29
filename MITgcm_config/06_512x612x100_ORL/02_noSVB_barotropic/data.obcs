@@ -1,0 +1,32 @@
+# Open-boundaries
+ &OBCS_PARM01
+ OB_Iwest = 612*1,
+ OB_Jsouth = 512*1,
+ OB_Jnorth = 512*-1,
+ useOrlanskiWest=.TRUE.,
+ useOrlanskiSouth=.TRUE.,
+ useOrlanskiNorth=.TRUE.,
+ useOBCSsponge=.FALSE.,
+ useLinearSponge=.FALSE.,
+ OBCSsponge_Salt=.FALSE.,
+ OBCSsponge_Theta=.FALSE.,
+ useOBCSbalance=.TRUE.,
+ useOBCSprescribe=.FALSE.,
+ OBCS_balanceFacW=1.,
+ OBCS_balanceFacS=1.,
+ OBCS_balanceFacN=1.,
+ OBCS_monitorFreq=1200.,
+ &
+ 
+ &OBCS_PARM02
+ cvelTimeScale=2000.0,
+ CMAX=1.0,
+ &
+
+ &OBCS_PARM03
+ spongeThickness=12,
+ Urelaxobcsinner=600.E0,
+ Vrelaxobcsinner=600.E0,
+ Urelaxobcsbound=90.E0,
+ Vrelaxobcsbound=90.E0,
+ &

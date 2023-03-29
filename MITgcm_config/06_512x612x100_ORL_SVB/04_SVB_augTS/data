@@ -1,0 +1,95 @@
+# Model parameters
+# Continuous equation parameters
+ &PARM01
+ viscAh=100.,
+ viscAr=1.E-5,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ diffKhT=100.,
+ diffKrT=1.E-5,
+ diffKhS=100.,
+ diffKrS=1.E-5,
+ ivdc_kappa=1.,
+ implicitDiffusion=.TRUE.,
+ eosType='LINEAR',
+ tAlpha=2.E-4,
+ sBeta=7.4E-4,
+ rhoNil=999.8,
+ gravity=9.81,
+ rigidLid=.FALSE.,
+ implicitFreeSurface=.TRUE.,
+ exactConserv=.TRUE.,
+ saltStepping=.TRUE.,
+ readBinaryPrec = 64,
+ writeBinaryPrec = 64,
+ tRef = 21.31,21.3,21.28,21.27,21.25,21.24,21.22,21.13,20.91,20.67,20.41,19.84,19.18,18.45,17.64,16.78,
+        16.1,15.42,14.87,14.32,13.87,13.43,13.04,12.63,12.28,11.94,11.64,
+        11.34,11.04,10.73,10.43,10.18,9.95,9.74,9.54,9.37,9.22,
+        9.08,8.95,8.85,8.76,8.67,8.57,8.46,8.33,8.19,8.04,7.88,7.72,7.55,7.38,
+        7.19,7.02,6.84,6.67,6.49,6.33,6.18,6.03,5.89,5.75,5.61,5.46,5.31,5.16,5.0,
+        4.84,4.68,4.52,4.37,4.23,4.09,3.94,3.79,3.62,3.46,3.29,
+        3.12,2.94,2.79,2.65,2.5,2.35,2.2,2.09,2.02,1.95,1.88,1.81,
+        1.75,1.68,1.61,1.57,1.53,1.5,1.47,1.44,1.4,1.38,1.48,
+ sRef = 33.52,33.52,33.52,33.52,33.52,33.52,33.52,
+        33.52,33.52,33.52,33.52,33.52,33.53,33.53,33.53,
+        33.53,33.54,33.54,33.54,33.55,33.55,33.56,33.56,33.57,33.58,33.6,33.61,33.63,33.64,33.67,33.69,
+        33.71,33.74,33.77,33.81,33.84,33.88,33.91,33.95,33.98,
+        34.01,34.04,34.07,34.11,34.14,34.17,34.2,34.22,34.23,34.24,34.25,
+        34.26,34.28,34.29,34.31,34.32,34.33,34.35,34.36,34.37,34.38,34.39,34.4,
+        34.41,34.42,34.43,34.44,34.45,34.46,34.47,34.48,
+        34.49,34.5,34.51,34.52,34.53,34.54,34.56,34.57,34.58,34.59,
+        34.61,34.62,34.63,34.64,34.65,34.66,34.67,34.68,34.68,
+        34.68,34.68,34.68,34.69,34.69,34.7,34.7,34.71,34.71,34.69,
+# globalFiles=.TRUE.,
+ useSingleCpuIO=.TRUE.,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dTargetResidual=1.E-7,
+ cg2dMaxIters=1000,
+ &
+
+# Time stepping parameters
+ &PARM03
+ startTime=86400.,
+ endTime=432000.,
+ pickupSuff='ckptB',
+ nIter0=1440,
+ deltaT=60.,
+ chkptFreq=43200.,
+ dumpFreq=172800.,
+ monitorFreq=1200.,
+ monitorSelect=2,
+# periodicExternalForcing=.TRUE.,
+# externForcingPeriod=1800.,
+# externForcingCycle=216000,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingSphericalPolarGrid=.TRUE.,
+ xgOrigin=238.0,
+ ygOrigin=27.0,
+ delR= 2, 2, 2, 2, 2, 2.2, 2.4, 2.6, 2.8, 
+       3.0, 3.2, 3.5, 3.8, 4.2, 4.5, 4.8, 5, 5, 5, 
+       5, 5, 5, 5.5, 5.5, 5.5, 5.5, 5.5, 6, 6.5,
+       7, 7.5, 8, 8.5, 9.2, 10, 10, 10, 10, 10, 10, 
+       10, 11, 12, 13, 14, 15, 16, 17, 18, 20,
+       22, 23, 25, 25, 25, 25, 25, 25, 25, 25, 
+       27, 28, 30, 30, 32, 34, 36, 38, 40, 43, 
+       46, 50, 55, 59, 65, 70, 75, 80, 85, 92, 
+       100, 100, 100, 100, 100, 100, 105, 115, 125, 132,
+       145, 160, 170, 180, 190, 200, 210, 230, 245, 269.8,
+ delY = 612*0.0136,
+ delX = 512*0.0156,
+ &
+
+ &PARM05
+ bathyFile='/home/sio-kramosmusalem/MITgcm/SVB/input/domain5_512x612_SVB_flatBdy_bat.bin',
+# meridWindFile='/home/sio-kramosmusalem/MITgcm/SVB/input/upwelling_merid_halfgauss2hr_512x612.bin',
+# zonalWindFile='/home/sio-kramosmusalem/MITgcm/SVB/input/upwelling_zonal_halfgauss2hr_512x612.bin', 
+# hydrogThetaFile='/home/sio-kramosmusalem/MITgcm/SVB/input/aug_Tref_100zlev_512x612.bin',
+# hydrogSaltFile='/home/sio-kramosmusalem/MITgcm/SVB/input/aug_Sref_100zlev_512x612.bin',
+ &
+
