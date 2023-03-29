@@ -1,0 +1,20 @@
+name: SVB
+channels:
+  - defaults
+dependencies:
+  - dask
+  - scipy
+  - xarray
+  - python
+  - xmitgcm
+  - jupyterlab
+  - matplotlib
+  - eofs
+  - seaborn
+  - ffmpeg
+  - seawater
+  - netcdf4
+  - pycwt
+  - cartopy
+  - haversine
+prefix: /home/sio-kramosmusalem/.conda/envs/SVB
