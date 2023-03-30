@@ -58,7 +58,7 @@ def tau(U10, V10, rho=1.29):
 # I downloaded U and V components of wind at 4 pressure levels (1,10,100,500 hPa) for all of 2016 
 # at a similar domain as the one I have in the model.
 
-filename = '2016_hourly_UV10m_4levs.nc'
+filename = 'save_data/2016_hourly_UV10m_4levs.nc'
 dsw = xr.open_dataset(filename)
 
 

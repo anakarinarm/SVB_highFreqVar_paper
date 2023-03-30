@@ -56,7 +56,7 @@ dsS2 = open_mdsdataset(outdirS2, prefix=['eta','dynVars'], levels=levels, iters=
 
 
 # --- Get coastline points ---
-df = pd.read_csv('coastline_points_list.dat',names=['lon_ii','lat_jj'], header=1 )
+df = pd.read_csv('saved_data/coastline_points_list.dat',names=['lon_ii','lat_jj'], header=1 )
 lon_ii = np.array(df.lon_ii[:])-np.ones_like(df.lon_ii)
 lat_jj = np.array(df.lat_jj[:])-np.ones_like(df.lat_jj)
 
