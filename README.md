@@ -12,6 +12,6 @@ This repository is divided into:
 
 **MITgcm_config**  input files (data and bathymetry files) needed to reproduce our MITgcm runs.
 
-All the python libraries needed to run the scripts and notebooks are listed in the the yaml file ````SVB.yml``` for the conda envirnoment ```SVB````.
+All the python libraries needed to run the scripts and notebooks are listed in the the yaml file ```SVB.yml``` for the conda envirnoment ```SVB```.
 
 A subdomain of the model output can be downloaded here: 
