@@ -1,0 +1,1 @@
+This folder contains python scripts to reproduce each figure in the manuscript. The folder `saved_data` contains all the postprocessed model results and calculations needed to make each plot. Some scripts may require the bathymetry or full model output files provided in the model dataset:
