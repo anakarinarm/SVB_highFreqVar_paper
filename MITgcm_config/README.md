@@ -1,6 +1,6 @@
 MITgcmUV version:  checkpoint67y
 
-```Input/```: Input files (bathymetry, wind stress, T and S) 
+```Input/```: Input files (bathymetry, wind stress, T and S) an be found in the model output dataset.
 
 ```06_512x612x100_ORL_SVB/```: Runs with Sebastian Vizcaino Bay
 
