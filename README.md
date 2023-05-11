@@ -1,17 +1,16 @@
-**UNDER CONSTRUCTION**
+## Notebooks, code and data for "High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California"
+K. Ramos-Musalem, S. R. Gille, B. D. Cornuelle and M. R. Mazloff (2023) <br/>   *Journal of Geophysical Research: Oceans*   
 
-## High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California
-### Submitted to JGR-Oceans
-### Notebooks, code and data
 
-This repository is divided into:
 
-**figures/**  notebooks used to generate figures in the paper
+**This repository is divided into:**
 
-**postprocessing/** code used to calculate energy contributions and vertical velocity variance
+* **figures/**  notebooks used to generate figures in the paper
 
-**MITgcm_config**  input files (data and bathymetry files) needed to reproduce our MITgcm runs.
+* **postprocessing/** code used to calculate energy contributions and vertical velocity variance
+
+* **MITgcm_config**  configuration files needed to reproduce our MITgcm runs.
 
 All the python libraries needed to run the scripts and notebooks are listed in the the yaml file ```SVB.yml``` for the conda envirnoment ```SVB```.
 
-A subdomain of the model output can be downloaded here: 
+Selected variables of the model output can be downloaded here: 
