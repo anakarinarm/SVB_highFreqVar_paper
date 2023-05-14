@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/620620029.svg)](https://zenodo.org/badge/latestdoi/620620029)
+
 ## Notebooks, code and data for "High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California"
 K. Ramos-Musalem, S. R. Gille, B. D. Cornuelle and M. R. Mazloff (2023) <br/>   *Journal of Geophysical Research: Oceans*   
 
