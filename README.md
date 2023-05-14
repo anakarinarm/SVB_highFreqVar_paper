@@ -13,4 +13,4 @@ K. Ramos-Musalem, S. R. Gille, B. D. Cornuelle and M. R. Mazloff (2023) <br/>   
 
 All the python libraries needed to run the scripts and notebooks are listed in the the yaml file ```SVB.yml``` for the conda envirnoment ```SVB```.
 
-Selected variables of the model output can be downloaded here: 
+Selected variables of the model output can be downloaded form the model output dataset at Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7933674.svg)](https://doi.org/10.5281/zenodo.7933674)
